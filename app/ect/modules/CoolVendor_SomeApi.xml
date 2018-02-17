@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <CoolVendor_SomeApi>
+            <active>true</active>
+            <codePool>local</codePool>
+        </CoolVendor_SomeApi>
+    </modules>
+</config>

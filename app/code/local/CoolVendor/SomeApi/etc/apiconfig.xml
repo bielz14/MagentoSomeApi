@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<someapi_module>
+    <formats>
+        <formatone><!-- имя формата -->
+            <version_list>
+                <version>
+                    <value>1.0.0</value>
+                    <command_list>
+                        <command>
+                            <name>getProducts</name>
+                            <validator_options>
+                                <parameter>
+                                    <name>limit</name>
+                                    <value>1000</value>
+                                </parameter>
+                            </validator_options>
+                            <properties>
+                                <property>
+                                    <name>order by</name>
+                                    <value>entity_id</value>
+                                </property>
+                            </properties>
+                            <handler>ProductsReceiptOne</handler>
+                        </command>
+                    </command_list>
+                </version>
+            </version_list>
+        </formatone>
+        <formattwo>
+            <version_list>
+                <version>
+                    <value>1.0.0</value>
+                    <command_list>
+                        <command>
+                            <name>getProducts</name>
+                            <validator_options>
+                                <parameter>
+                                    <name>limit</name>
+                                    <value>1000</value>
+                                </parameter>
+                            </validator_options>
+                            <properties>
+                                <property>
+                                    <name>order by</name>
+                                    <value>id</value>
+                                </property>
+                            </properties>
+                            <handler>ProductsReceiptTwo</handler>
+                        </command>
+                    </command_list>
+                </version>
+            </version_list>
+        </formattwo>
+    </formats>
+    <email_to_send_ticket>slime1410@gmail.com</email_to_send_ticket>
+</someapi_module>

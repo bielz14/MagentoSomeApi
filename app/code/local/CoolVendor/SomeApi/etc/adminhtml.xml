@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento admin config
+ *
+ * @author Magento
+ */
+-->
+<config>
+    <menu>
+        <someapi translate="title" module="coolvendor_someapi">
+            <title>SomeApi</title>
+            <sort_order>65</sort_order>
+            <children>
+                <sendticket translate="title" module="coolvendor_someapi">
+                    <title>Send ticket</title>
+                    <action>adminhtml/someapi/ticketform</action>
+                </sendticket>
+            </children>
+        </someapi>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sendticket translate="title" module="coolvendor_someapi">
+                        <title>Send ticket</title>
+                        <sort_order>0</sort_order>
+                    </sendticket>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

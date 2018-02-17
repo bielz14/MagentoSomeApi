@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <CoolVendor_SomeApi>
+            <version>1.0.0</version>
+        </CoolVendor_SomeApi>
+    </modules>
+    <global>
+        <blocks>
+            <coolvendor_someapi>
+                <class>CoolVendor_SomeApi_Block</class>
+            </coolvendor_someapi>
+        </blocks>
+        <helpers>
+            <coolvendor_someapi>
+                <class>CoolVendor_SomeApi_Helper</class>
+            </coolvendor_someapi>
+        </helpers>
+        <models>
+            <coolvendorsomeapi>
+                <class>CoolVendor_SomeApi_Model</class>
+                <resourceModel>coolvendorsomeapi_resource</resourceModel>
+            </coolvendorsomeapi>
+            <coolvendorsomeapi_resource>
+                <class>CoolVendor_SomeApi_Model_Resource</class>
+                <entities>
+                    <table_birrers>
+                        <table>coolvendor_someapi_birrers</table>
+                    </table_birrers>
+                </entities>
+            </coolvendorsomeapi_resource>
+        </models>
+        <resources>
+            <coolvendorsomeapi_setup>
+                <setup>
+                    <module>CoolVendor_SomeApi</module>
+                </setup>
+            </coolvendorsomeapi_setup>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <someapi>
+                <use>standard</use>
+                <args>
+                    <module>CoolVendor_SomeApi</module>
+                    <frontName>someapi</frontName>
+                </args>
+            </someapi>
+        </routers>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <someapi before="Mage_Adminhtml">CoolVendor_SomeApi_Adminhtml</someapi>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <defalut>
+
+    </defalut>
+</config>

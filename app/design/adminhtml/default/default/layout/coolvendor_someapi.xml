@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <coolvendorsamapi_adminhtml_samapi_ticketform>
+        <reference name="content">
+            <block type="coolvendor_samapi/adminhtml_form" name="form" template="coolvendor_samapi/form.phtml"/>
+        </reference>
+    </coolvendorsamapi_adminhtml_samapi_ticketform>
+</layout>
