@@ -36,15 +36,9 @@ class ApiProcessOne implements ApiProcessInterface
                         return $productsReceiptHandler->executeProcess($this->commandInput, $this->commandProperty);
                     }
                     return $productsReceiptHandler->executeProcess($this->commandInput);
-                }else{
-                    return false;
                 }
             }
-
-            return false;
-
-        }else{
-            return false;
         }
+        return false;
     }
 }
